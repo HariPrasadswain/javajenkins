@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  hari-ui-service:
+    image: hari-webapp:version$BUILD_NUMBER
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: hari-web-c1
+    ports:
+      - 1255:80
